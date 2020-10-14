@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="layout__container">
+        <header class="header__content">
+            <img class="header__logo" src="./img/logo.png" alt="logo">
+            <form class="header__search" action="#">
+                <input class="header__search-input" type="text" placeholder="search hotel">
+                <button class="header__button-magnify">
+                    <svg class="header__search-icon">
+                        <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="header__user-nav">
+                <div class="header__icon-box">
+                    <svg class="header__icon">
+                        <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="header__notification">7</span>
+                </div>
+                <div class="header__icon-box">
+                    <svg class="header__icon">
+                        <use xlink:href="./img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="header__notification">7</span>
+                </div>
+                <div class="header__user-photo">
+                    <img src="./img/user.jpg" alt="user">
+                    <span class="header__user-name">Juan</span>
+                </div>
+
+
+            </nav>
+        </header>
+        <div class="layout__content">
+            <nav class="sidebar__content">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a class="side-nav__link" href="#">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="/img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a class="side-nav__link" href="#">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="/img/sprite.svg#icon-aircraft"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a class="side-nav__link" href="#">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="/img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a class="side-nav__link" href="#">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="/img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Map</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2020 by Trillo. All right reserved.
+                </div>
+            </nav>
+            <main class="hotel-view__content">
+                hotel view
+            </main>
+        </div>
+
+    </div>
+</body>
+
+</html>

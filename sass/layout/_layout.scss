@@ -1,0 +1,12 @@
+
+.layout__container {
+  max-width: 120rem;
+  margin:8rem auto;
+  background-color: var(--grey-light-1);
+  min-height: 50rem;
+  box-shadow: var(--shadow-dark);
+}
+
+.layout__content {
+  display: flex;
+}
