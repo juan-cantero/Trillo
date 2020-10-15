@@ -1,0 +1,70 @@
+.btn-inline {
+  border:none;
+  color:var(--primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    color:var(--dark-grey-1);
+  }
+
+  &:focus {
+    outline:none;
+  }
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border:none;
+  background-image: linear-gradient(to right,var(--primary-light),var(--primary-dark));
+  color:#fff;
+ 
+}
+
+.btn-changeable {
+  position:relative;
+  overflow: hidden;
+  @extend .btn-primary;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    position:absolute;
+    padding:2rem 0;
+    left: 0;
+    top:-100%;
+  }
+
+  &:hover {
+   background-image: linear-gradient(to left,var(--primary-light),var(--primary-dark));
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top:0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

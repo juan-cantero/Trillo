@@ -4,11 +4,21 @@
 @import './base/base';
 @import './base/colors';
 @import './base/variables';
+@import './base/typography';
 
 //layour
 @import './layout/layout';
 
 //components
+@import './components/common/buttons';
 @import './components/header';
 @import './components/sidebar';
 @import './components/hotel-view';
+@import './components/gallery';
+@import './components/overviews';
+@import './components/detail';
+@import './components/description';
+@import './components/user-reviews';
+@import './components/recomend';
+@import './components/list';
+@import './components/cta';

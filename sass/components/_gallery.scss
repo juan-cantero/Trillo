@@ -1,0 +1,27 @@
+.gallery ,.swiper-container{
+  display: flex;
+  justify-content: stretch;
+  height: 220px;
+  width: 101%;
+  position: relative;
+
+
+  &__photo{
+    width: 33%;
+    height: 220px;
+
+  }
+
+  &__item {
+    margin-right: 0.10rem;
+    margin-left: 0;
+  }
+
+ 
+}
+
+ .swiper-pagination {
+    position: absolute;
+    top:170px;
+    height: fit-content;
+  }
